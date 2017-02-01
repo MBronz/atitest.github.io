@@ -1,0 +1,636 @@
+/* =====================
+    Global setting
+===========================/
+
+/* fonts */
+
+/* fonts */
+
+
+.clear-fix{
+    clear:both
+}
+
+.container{
+
+position: relative;
+margin: 0 auto;   
+}
+ul{
+    margin:0;
+    padding:0;
+    li {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+}
+/* =====================
+    Global setting
+===========================*/
+
+
+/* =====================
+        Home page
+===========================*/
+/* HEADER */
+#home{
+    
+    background-color:#000;
+    min-height: 100vh;
+    background-attachment:fixed;
+
+}
+header{
+        padding: 20px 0 0 0;
+    height: 92px;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    background-color: #fff;
+
+}
+
+.logo-place{
+    float: left;
+    position: relative;
+    width: 85px;
+    
+    img{
+        width:100%;   
+    }
+}
+.nav-place{
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight:600
+}
+.menu-element{
+        margin-top: 18px;
+        height: 23px;
+        width: 41px;
+        position: relative;
+        z-index: 100;
+        float: right;
+        top: 35%;
+        margin-left: -25px;
+        cursor: pointer;
+        display:none;
+
+        span {
+            width: 40px;
+            height: 4px;
+            border-radius: 9px;
+            position: absolute;
+            background-color: #cbac7a;
+
+        }
+
+        span:nth-child(1) {
+            top: 0;
+        }
+
+        span:nth-child(2) {
+            top: 8px;
+        }
+
+        span:nth-child(3) {
+            top: 16px;
+        }
+    }
+nav {
+    margin-left:40px;
+
+    ul {
+        float:right;
+        li {
+            display: inline-block;
+    margin: 0 18px 0 9px;
+       line-height:  64px;;
+        }
+    }
+
+   
+    a{
+    color:#000;
+    font-size:19px
+}
+}
+/* == section ==*/
+
+.main-text{ 
+    
+    color:#fff;
+    position: relative;
+        height: 464px;
+    text-align:center;
+    .cntering{
+         position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    h1{
+            font-family: 'Playfair Display', serif;
+    font-size: 8em;
+    color: #000;
+    margin: -14px;
+    color: #fff;
+    }
+    p{
+        font-family:'Raleway', sans-serif;;
+            font-size: 1.8em;
+        margin:20px 0 0 0;
+        color:#fff
+    }
+}
+.box-to-center{
+    width:100px;
+    height:100px;
+  
+}
+/* sec -1*/
+#sec-1,#sec-2{
+     min-height: 100vh;
+     background-color:#fff;
+     .main-box{
+        float:left;
+        width:50%;
+        position: relative;
+        .text-box{
+            padding: 150px 151px 0
+        }
+        h2{
+             font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            color:#000;
+        }
+        p{
+            font-family: "Raleway", sans-serif;
+            font-size: 1.5em;
+            
+        }
+        .line{
+                display:block;
+                width:300px;
+                height:2px;
+                margin-top: 25px;
+            }
+            .more{
+                position: relative;
+                margin-top: 23px;
+                a{
+                    font-weight:600
+                }
+            }
+     }
+    .img-box{
+        float: left;
+        width: 50%;
+        position: relative;
+        .background{
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    }
+}
+#sec-1{
+        
+           .main-box{
+            color:#4a4a49; 
+            p{
+                color: #736e69
+            }
+            .line{
+                background:#c2a77a;
+            }
+        .more{ 
+            a{
+            color:#000;    
+        }
+            
+    }       
+}
+  .img-box{
+        .background{
+        background-image: url(../img/home.png);
+        background-position:40% bottom;
+        
+    }
+}  
+}
+
+/* Sec-2 */
+#sec-2{
+        
+           .main-box{
+            color:#4a4a49; 
+            p{
+                color:  #736e69;
+            }
+            .line{
+                background:#c2a77a;
+            }
+        .more{ 
+            a{
+            color:#000;    
+        }
+            
+    }       
+}
+    .img-box{
+        .background{
+        background-image: url(../img/sec-2.png);
+        background-position:40% bottom;
+    }
+}
+}
+#sec-1,#sec-2{
+    i{
+        position: absolute;
+    top: 1px;
+    left: 92px;
+    font-size: 19px;
+    color: #60c2a5
+    }
+}
+
+/*======== Our parner ===========*/
+
+#sec-3{
+    background-color:#fff;
+    
+        padding:100px 0 100px 0;
+
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size: 3em;
+        color:#000;
+        text-align:center;
+        margin-bottom:59px;
+    }
+    .cont-img{
+        height: 10em;
+        position: relative;
+        img{
+            margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in-out;
+    filter: grayscale(100%); -webkit-filter: grayscale(100%); filter: gray;
+    cursor:pointer;
+    &:hover{
+        filter: grayscale(0); -webkit-filter: grayscale(0%); filter: gray; 
+
+    }
+    }
+        
+    }
+    /* I will delete this */
+    
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    background:#000
+}
+
+/* ====== contact us  =====*/
+
+#sec-4{
+   
+    background-color:#000;
+    padding:100px;
+
+    h2{
+         font-family: 'Playfair Display', serif;
+        font-weight:600;
+        font-size:27px;
+        line-height:34px;
+        color:#fff
+    }
+    
+    h3{
+        font-family: "Montserrat", sans-serif;
+        font-weight:600;
+        color:#fff
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size:16px;
+        line-height:22px;
+        color:#5fc2a5;
+        a{
+            color:rgba(255, 255, 255, 0.34)
+        }
+    }
+}
+.Follow{
+    color:#c5c5c5;
+    font-size:30px;
+    margin:0 5px;
+    transition:all .33s ease-in-out;
+    &:hover{
+        color:#c2a77a
+    }
+}
+/* =====================
+        End Home page
+===========================*/
+
+
+
+/* =====================
+        Start about page
+===========================*/
+
+#home-about-us{
+   min-height: 100vh;
+    nav {
+         a{
+            color:#000;
+            font-size:15px
+    }
+  }
+  header{
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        nav {
+            a{
+                color:#000
+            }
+        }
+    }
+}
+.main-text-about-us{
+    padding-bottom:100px;
+    background:#ffffff;
+    h1{
+         font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#000;
+    margin: 185px 0 53px 0;
+    }
+                font-size: 16px;
+    p:nth-of-type(1){
+    margin-top: 9px;
+    color: #b5b5bf}
+;
+        p{
+        font-family: "Raleway", sans-serif;
+            font-size: 17px;
+    line-height: 29px;
+    margin-top: 35px;
+    }
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size:40px;
+        margin-top:58px;
+       color:#000;
+    }
+    span{
+        color:#000;
+        font-family: "Montserrat", sans-serif;
+    }
+    .cntering {
+        width:561px
+    }
+}
+
+/* =====================
+        Start about page
+===========================*/
+
+
+
+/*========= Start Services Page ==========
+
+==================================*/
+#home-services{
+    nav {
+        a{
+            color:#000
+        }
+    }
+    header{
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        nav {
+            a{
+                color:#000
+            }
+        }
+    }
+}
+#main-text-services{
+        min-height: 100vh;
+        padding: 96px 0 106px 0;
+        
+    h1{
+        font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+   color:#000;
+    margin: 185px 0 53px 0;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size:17px;
+    }
+    
+}
+.caption{
+    li{
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+/*========= End Services Page ==========
+
+==================================*/
+
+
+
+
+
+
+/*========= Start Equpment Page ==========
+
+==================================*/
+#home-Equpment{
+    nav {
+        a{
+            color:#000
+        }
+    }
+    header{
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        nav {
+            a{
+                color:#000
+            }
+        }
+    }
+}
+
+#main-text-Equpment{
+        min-height: 100vh;
+        padding: 96px 0 106px 0;
+        
+    h1{
+font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#000;
+    margin: 185px 0 53px 0;
+    }
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size:17px;
+    }
+
+}
+.caption{
+    li{
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+
+
+/*========= End Equpment Page ==========
+
+==================================*/
+
+
+
+/*========= Start Contact Page ==========
+
+==================================*/
+
+#main-text-contact{
+    padding-top:100px;
+    padding-bottom:100px;
+     h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:#000;
+    margin: 185px 0 106px 0;
+    }
+}
+
+
+.contact-me
+{
+
+  width:800px;
+  position: relative;
+  margin: 0 auto;
+   font-family: "Montserrat", sans-serif;
+}
+
+#contact h2:first-child
+{
+  margin-top: 45px;
+  font-size: 37px
+}
+
+.info
+{
+  text-align: right;
+}
+.info p
+{
+  color: #EEEEEE;
+  font-size: 15px;
+  font-family: Source Code Pro;
+
+}
+.info p:first-of-type
+{
+  color: #777770;
+  font-size: 20px;
+  font-family: Source Code Pro;
+}
+.contact-me h4
+{
+  color: #777770;
+  font-size: 16px;
+      margin: 18px 0 15px 15px;
+  font-family: Source Code Pro;
+}
+.hold
+{
+  margin: 0 20px 0 0
+}
+.contact-me input
+{
+  background: #222;
+  border:0;
+  padding:10px;
+  letter-spacing: 2px;
+  color: #EEEEEE;
+  width: 100%;
+}
+/*.text-area{
+    width:100%;
+    position: relative;
+
+}*/
+/*textarea
+{
+      margin: 32px 0 0 0;
+      background: #222;
+      border:0;
+      padding: 10px 3px ;
+      letter-spacing: 2px;
+      color: #EEEEEE;
+      width: 100%;
+}*/
+textarea{
+    width:100%;
+    margin-top:60px;
+    margin-bottom:20px;
+    background: #222;
+    color: #EEEEEE;
+    letter-spacing: 2px;
+    padding:10px
+}
+button
+{  background: #222;
+  border:0;
+  padding: 10px 20px ;
+  letter-spacing: 2px;
+  color: #EEEEEE;
+    margin: 21px 0 0 16px;
+    display:block
+
+}
+
+#main-text-about p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+.maps{
+    color:#fff;
+     font-family: "Montserrat", sans-serif;
+         font-size: 18px;
+}
+
+/*========= End Contact Page ==========
+
+==================================*/
